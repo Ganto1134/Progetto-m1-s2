@@ -13,12 +13,12 @@ body {
 /* header */
 
 header div { 
-    background-color: #222f3f;        /* qua potevo mettere questo colore al body così non dovevo 
-    height: 4.5rem;                        rimettere il colore per il footer e poi mettere la parte centrale dell'altro colore */
+    background-color: #222f3f;        /* qua potevo mettere questo colore al body così non dovevo */
+    height: 4.5rem;                      /*  rimettere il colore per il footer e poi mettere la parte centrale dell'altro colore */
 }
 
-.logo {                         /* ho creato una classe per il logo ma poi quando sono arrivato sotto non l'ho 
-    width: 130px;                  riutilizzata perchè il logo sotto mi sembrabva più grande */
+.logo {                         /* ho creato una classe per il logo ma poi quando sono arrivato sotto non l'ho */
+    width: 130px;                /*  riutilizzata perchè il logo sotto mi sembrabva più grande */
     padding: 1rem 2rem;
     padding-top: 0.5rem;
 }
