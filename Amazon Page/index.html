@@ -13,12 +13,14 @@
         <img src="./assets/images/logo.png" class="logo" alt="Logo amazon">
         </div>
         <nav>
-            <a href="#">All</a>
-            <a href="#">Today's deals</a>
-            <a href="#">Customer Service</a>
-            <a href="#">Registry</a>
-            <a href="#">Gift Cards</a>
-            <a href="#">Sell</a>
+            <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Today's deals</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sell</a></li>
+            </ul>
         </nav>
     </header>
     <div class="contenitore">
@@ -61,23 +63,22 @@
     </div>
     <script>
         //   https://stackoverflow.com/questions/51622091/changing-background-image-based-on-local-time
-        setInterval(change_background, 1000 * 60 * 2); // aggiornamento ogni 2 minuti
-
+        setInterval(change_background, 1000 * 60 * 2); 
         function change_background() {
             let d = new Date();
-            let n = d.getHours();    // presa dell'orario
+            let n = d.getHours();    
             let guida = document.getElementById('guida');
             console.log(n);
-            if (n >=23 && n < 7) {
-                guida.classList.remove('giorno');
-                guida.classList.add('notte'); // cambio in caso che sia notte
+            if (n >=22 && n < 7) {
+                guida.classList.remove('giorno'); // rimozione per non fare una pila di immagini una sopra l'altra
+                guida.classList.add('notte'); 
             } else {
                 guida.classList.remove('notte');
                 guida.classList.add('giorno');
             }
-            console.log("test");  // vedere se funziona la funzione
+            console.log("test");  
         }
-        change_background();  // chiamata della funzione
+        change_background();  
     </script>
 </body>
 </html>
