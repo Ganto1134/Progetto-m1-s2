@@ -74,7 +74,7 @@ section h4 {
     padding-bottom: 4.5rem;
 }
 
-#guida.notte { 
+#guida.notte {                                  /* cambio dell'background con lo script */
     background-image: url(../images/bg-img.png);
 }
 
@@ -86,6 +86,8 @@ section h4 {
 #guida p { 
     font-size: 2.5vh;
 }
+
+/* section 2 */
 
 #foto {
     background-color: white;
