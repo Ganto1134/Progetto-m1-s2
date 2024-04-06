@@ -13,12 +13,12 @@ body {
 /* header */
 
 header div { 
-    background-color: #222f3f;
-    height: 4.5rem;
+    background-color: #222f3f;        /* qua potevo mettere questo colore al body così non dovevo 
+    height: 4.5rem;                        rimettere il colore per il footer e poi mettere la parte centrale dell'altro colore */
 }
 
-.logo { 
-    width: 130px;
+.logo {                         /* ho creato una classe per il logo ma poi quando sono arrivato sotto non l'ho 
+    width: 130px;                  riutilizzata perchè il logo sotto mi sembrabva più grande */
     padding: 1rem 2rem;
     padding-top: 0.5rem;
 }
@@ -73,6 +73,11 @@ section h4 {
     padding-top: 3%;
     padding-bottom: 4.5rem;
 }
+
+#guida.notte { 
+    background-image: url(../images/bg-img.png);
+}
+
 
 #guida h1 { 
     font-size: 3vh;

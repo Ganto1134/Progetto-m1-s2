@@ -24,10 +24,10 @@
     <div class="contenitore">
         <main>
             <section>
-                <h4>Shop All Holyday Gift Cards</h4>
-                <div id="guida">
-                    <h1>Holiday Gift Guides</h1>
-                    <p>Be a go-gifter</p>
+                <h4>Shop All Holyday Gift Cards</h4>  <<!-- ho fatto uno script per cambiare il background in base all'orario se notte o giorno, le immagini le avrei volute usare al contrario ma il sito di base aveva quella più scura e quella in più era più chiara -->
+                <div id="guida">                                
+                    <h1>Holiday Gift Guides</h1>                
+                    <p>Be a go-gifter</p>                   
                 </div>
             </section>
             <section id="foto">
@@ -59,5 +59,20 @@
             </div>
         </footer>
     </div>
+    <script>
+         setInterval(change_background, 1000 * 60 * 2); // aggiornamento ogni 2 minuti
+
+        function change_background() {
+            var d = new Date();
+            var n = d.getHours();    // presa dell'orario
+            var guida = document.getElementById('guida') 
+            console.log(n);
+            if (n == 23 || n < 7) {
+                guida.classList.add('notte'); // cambio in caso che sia notteà
+            }
+            console.log("test");  // vedere se funziona la fuznione
+        }
+        change_background();  // chiamata della funzione
+    </script>
 </body>
 </html>
