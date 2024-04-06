@@ -67,7 +67,6 @@ section h4 {
 
 #guida {
     margin-top: 2rem;
-    background-image: url(../images/bg-image.png) ;
     background-size: 90%;
     color: white;
     height: 9vh;
@@ -76,7 +75,11 @@ section h4 {
     padding-bottom: 4.5rem;
 }
 
-#guida.notte {                                  /* cambio dell'background con lo script */
+.giorno { 
+    background-image: url(../images/bg-image.png);
+}
+
+.notte {                                  /* cambio dell'background con lo script */
     background-image: url(../images/bg-img.png);
 }
 

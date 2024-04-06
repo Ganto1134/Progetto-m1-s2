@@ -32,7 +32,7 @@
             </section>
             <section id="foto">
                 <div>
-                    <h1>Find the perfect gift <a href="#" class="linkino">Shop now</a> </h1> 
+                    <h1>Find the perfect gift <a href="#" class="linkino" title="shop">Shop now</a> </h1> 
                 </div>
                 <div>
                     <img src="./assets/images/img_1.jpg" alt="Kindle">
@@ -44,33 +44,38 @@
             <section id="figure">
                 <figure>
                     <img src="./assets/images/img_9.png" alt="">
-                    <figcaption>Play the gifting game <a href="#" class="linkino">Shop gaming</a></figcaption>
+                    <figcaption>Play the gifting game <a href="#" class="linkino" title="gaming">Shop gaming</a></figcaption>
                 </figure>
                 <figure>
                     <img src="./assets/images/img_10.png" alt="">
-                    <figcaption>The sound of cheer <a href="#" class="linkino">Shop Audio & Accessories</a></figcaption>
+                    <figcaption>The sound of cheer <a href="#" class="linkino" title="shop audio">Shop Audio & Accessories</a></figcaption>
                 </figure>
             </section>
         </main>
         <footer>
-            <p><a href="#top" class="linkino">Back to top</a></p>
+            <p><a href="#top" title="back to top">Back to top</a></p>
             <div>
             <img src="./assets/images/logo.png" alt="Logo di Amazon">
             </div>
         </footer>
     </div>
     <script>
-         setInterval(change_background, 1000 * 60 * 2); // aggiornamento ogni 2 minuti
+        //   https://stackoverflow.com/questions/51622091/changing-background-image-based-on-local-time
+        setInterval(change_background, 1000 * 60 * 2); // aggiornamento ogni 2 minuti
 
         function change_background() {
-            var d = new Date();
-            var n = d.getHours();    // presa dell'orario
-            var guida = document.getElementById('guida') 
+            let d = new Date();
+            let n = d.getHours();    // presa dell'orario
+            let guida = document.getElementById('guida');
             console.log(n);
-            if (n == 23 || n < 7) {
-                guida.classList.add('notte'); // cambio in caso che sia notteà
+            if (n >=23 && n < 7) {
+                guida.classList.remove('giorno'); // 
+                guida.classList.add('notte'); // cambio in caso che sia notte
+            } else {
+                guida.classList.remove('notte');
+                guida.classList.add('giorno');
             }
-            console.log("test");  // vedere se funziona la fuznione
+            console.log("test");  // vedere se funziona la funzione
         }
         change_background();  // chiamata della funzione
     </script>
