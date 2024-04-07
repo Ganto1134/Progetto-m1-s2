@@ -12,7 +12,10 @@ REGOLE
 */
 const pets = ['dog', 'cat', 'hamster', 'redfish'];
 
-console.log(pets);
+for (let i=0 ; i<pets.length; i++) { 
+  console.log(pets[i] + ', ')
+}
+
 
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
@@ -32,7 +35,9 @@ const petsInvertito = [...pets];   //creato un array specifico per non modificar
 
 petsInvertito.reverse();
 
-console.log(petsInvertito);
+for (let i=0 ; i<petsInvertito.length; i++) { 
+  console.log(petsInvertito[i] + '. ')
+}
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
